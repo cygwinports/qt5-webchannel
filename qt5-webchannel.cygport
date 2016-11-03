@@ -1,7 +1,7 @@
 inherit qt5-qmake
 
 NAME="qt5-webchannel"
-VERSION=5.5.1
+VERSION=5.6.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Qt C++ application framework (WebChannel API)"
@@ -10,8 +10,8 @@ embedded development. Qt enables programmers to create advanced GUI
 applications once and deploy them to Windows, Mac OS X and Linux without
 rewriting the source code. Companies using Qt can leverage software
 investments made on one platform across many others."
-HOMEPAGE="http://qt-project.org/"
-SRC_URI="http://download.qt-project.org/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qtwebchannel-opensource-src-${VERSION}.tar.xz"
+HOMEPAGE="https://www.qt.io/"
+SRC_URI="http://download.qt.io/official_releases/qt/${VERSION%.*}/${VERSION}/submodules/qtwebchannel-opensource-src-${VERSION}.tar.xz"
 SRC_DIR="qtwebchannel-opensource-src-${VERSION}"
 
 PKG_NAMES="libQt5WebChannel5 libQt5WebChannel-devel ${NAME}-doc ${NAME}-examples"
@@ -30,7 +30,7 @@ libQt5WebChannel_devel_CONTENTS="
 qt5_webchannel_doc_CATEGORY="Doc"
 qt5_webchannel_doc_CONTENTS="usr/share/qt5/doc/qtwebchannel*"
 qt5_webchannel_examples_CATEGORY="X11"
-qt5_webchannel_examples_CONTENTS="usr/lib/qt5/examples/qwebchannel/"
+qt5_webchannel_examples_CONTENTS="usr/lib/qt5/examples/webchannel/"
 
 src_compile() {
 	cd ${B}
